@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 10 calculator</title>
+    <link rel="stylesheet" href="styles/10-calculator.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="calculator">
+
+        <p class="js-message"></p>
+      <P>
+        <button onclick="
+          updateCalculation('1');
+          ">1</button>
+        <button onclick="
+           updateCalculation('2');
+        ">2</button>
+  
+        <button onclick="
+           updateCalculation('3');
+        ">3</button>
+  
+        <button onclick="
+          updateCalculation('+');
+        " class="yellow">+</button>
+  
+      </P>
+  
+      <P>
+        <button onclick="
+          updateCalculation('4');
+          ">4</button>
+  
+        <button onclick="
+           updateCalculation('5');
+        ">5</button>
+  
+        <button onclick="
+       updateCalculation('6');
+        ">6</button>
+  
+        <button onclick="
+          updateCalculation('-');
+        " class="yellow">-</button>
+  
+      </P>
+  
+      <P>
+        <button onclick="
+          updateCalculation('7');
+          ">7</button>
+  
+        <button onclick="
+           updateCalculation('8');
+        ">8</button>
+  
+        <button onclick="
+          updateCalculation('9');
+        ">9</button>
+  
+        <button onclick="
+          updateCalculation('*');
+        " class="yellow">*</button>
+  
+      </P>
+  
+      <P>
+        <button onclick="
+          updateCalculation('0');
+          ">0</button>
+  
+        <button onclick="
+           updateCalculation('.');
+        ">.</button>
+  
+        <button onclick="
+           calculation = eval(calculation);
+          
+          displayCalculation();
+          localStorage.setItem('calculate',calculation);
+        ">=</button>
+  
+        <button onclick="
+          updateCalculation('/');
+        " class="yellow">/</button>
+  
+      </P>
+  
+      <P>
+        <button onclick="
+          calculation = '';
+          
+          displayCalculation();
+          localStorage.setItem('calculate',calculation);
+          ">clear</button>
+      </P>
+      </div>
+      
+  
+    </div>
+   
+   <script src="scripts/10-calculator.js">
+
+   </script>
+  </body>
+</html>
